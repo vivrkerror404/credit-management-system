@@ -1,0 +1,135 @@
+	    html
+    {
+      scroll-behavior: smooth;
+    }
+    body
+    {
+      margin: 0px;
+      padding: 0px;
+
+     /* background-image: url(https://images.pexels.com/photos/4590785/pexels-photo-4590785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+      background-attachment: fixed;
+      background-size: cover;*/
+    }
+    .tablebox::-webkit-scrollbar {
+    display: none;
+}
+    .navimage
+    {
+      background-image: url('image/1.jpg');
+  height: 100vh;
+
+  background-size: cover;
+  animation: anime 7s linear infinite;
+ 
+    }
+   .desktopnav
+    {
+    background:linear-gradient(120deg,rgb(97, 219, 240),rgb(97, 219, 240),rgb(191, 227, 252),rgb(97, 219, 240))!important;
+    position: absolute!important;
+    top: 0px;
+    left: 0px;
+z-index: 100;
+
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+    }
+    .textfont a
+    {
+      color: darkcyan;
+    }
+ 
+   nav ul li
+   {
+    font-size: 20px;
+
+    display: inline-block!important;
+   }
+     footer ul li
+   {
+    font-size: 17px;
+ 
+   }
+
+   a
+   {
+    color: blue;
+    transition: 0.4s ease-in-out;
+   }
+   a:hover
+   {
+      color:rgb(40, 26, 224);
+   }
+   span i
+   {
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 25px;
+    padding:5px;
+    transition: 0.4s ease-in-out;
+     border: 2px solid #fff;
+     border-radius: 50%;
+   }
+   span i:hover
+   {
+    color:rgb(40, 26, 224);
+         border: 2px solid rgb(64, 92, 249);
+         cursor: pointer;
+     
+   }
+   .smallnav
+{
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  font-size: 20px;
+  background: linear-gradient(120deg,rgba(97, 219, 240,0.3),rgb(97, 219, 240),rgba(97, 219, 240,0.3))!important;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  z-index: 2000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;align-items: center;
+  flex-direction: column;
+}
+.smallnav li
+{
+  list-style-type: none;
+}
+.hamdiv
+{
+  display: none;
+}
+
+    @media screen and (max-width: 767px)
+{
+  .hamdiv
+  {
+    display: flex;
+    background: linear-gradient(120deg,rgb(97, 219, 240),rgb(97, 219, 240),rgb(191, 227, 252),rgb(97, 219, 240))!important;
+    padding: 3px;
+  }
+  .desktopnav
+  {
+    display: none;
+  }
+ 
+  .footborder
+  {
+    border:none!important;
+    border-top: 1px solid #fff!important;
+  }
+  .navimage{
+    background-image: url(https://cdn.pixabay.com/photo/2015/03/30/12/37/jellyfish-698521__340.jpg);
+
+  }
+  #mysvg
+  {
+    display: none!important;
+  }
+}
